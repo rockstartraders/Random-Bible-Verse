@@ -1,0 +1,267 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  height: auto;
+  background-image: url("../img/1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section {
+  padding: 0 100px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  resize: both;
+  height: auto;
+  padding: 40px;
+  background: rgba(104, 77, 73, 0.4);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  vertical-align: auto;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.box h1 {
+  margin: 0 0 20px;
+  padding: 6px;
+  font-size: calc(2rem + 1vw);
+  text-align: center;
+  /* color: #212121; */
+  /* color: #424242; */
+  color: #f2f3f4;
+  font-weight: bolder;
+  font-style: oblique;
+  /*font-family: 'BibleScriptStd'; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+#content {
+  margin: 0 0 20px;
+  padding: 10px 0px;
+  font-size: calc(.5rem + 1vw);
+  letter-spacing: 2px;
+  text-align: left;
+  /* color: #212121; */
+  color: white;
+}
+
+#pahina {
+  padding-top: 15px;
+  text-align: right;
+  font-size: calc(.5em + 1vw);
+  color: white;
+  font-weight: bold;
+}
+
+/* btn holder */
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+
+/* $green: #1ECD97; */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: -20px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+
+button {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 110px;
+  border-radius: 40px;
+  background: rgba(104, 77, 73, 0.3);
+  border: 2px solid white;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+button font {
+  size: 15px;
+  font-weight: bolder;
+}
+
+button:hover {
+  color: white;
+  background: #22af83;
+}
+
+button:active {
+  letter-spacing: 1px;
+}
+
+button:after {
+  content: "GENERATE";
+}
+
+.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #22af83;
+  -webkit-animation: rotating 1s .1s linear infinite;
+          animation: rotating 1s .1s linear infinite;
+}
+
+.onclic:after {
+  content: "";
+}
+
+.onclic:hover {
+  color: #22af83;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #22af83;
+}
+
+.validate:after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* footer */
+.s-m {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  padding-top: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.s-m a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  color: white;
+  margin: 0 6px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: calc(2rem + 1vw);
+  text-decoration: none;
+}
+
+.fa-github {
+  color: #22272b;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.s-m a i {
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.s-m a:hover > i {
+  -webkit-transform: scale(1.6) rotate(25deg);
+          transform: scale(1.6) rotate(25deg);
+}
+
+.fa-github:hover {
+  -webkit-transform: scale(1.6) rotate(25deg);
+          transform: scale(1.6) rotate(25deg);
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  color: #6e5494;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+#ngalan {
+  color: rgba(224, 219, 217, 0.89);
+}
+
+@media only screen and (max-width: 1224px) {
+  .s-m {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
