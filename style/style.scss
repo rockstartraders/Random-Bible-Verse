@@ -156,6 +156,7 @@ button {
     
     content:"GENERATE";
     
+    
   }
 }
 .onclic {
@@ -167,12 +168,11 @@ button {
   animation: rotating 1s .1s linear infinite;
 
 
-  &:after {
-    
-    
+  &:after {        
     content:"";
     
   }
+
   &:hover {
     color:$green;
     background: white;
@@ -266,7 +266,10 @@ button {
 
     display: none;
 
+  }
 
+  button .btn{
+    outline: none!important;
   }
 
 }

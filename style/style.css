@@ -263,16 +263,8 @@ button:after {
   .s-m {
     display: none;
   }
-
-  button{
-    outline: none;
+  button .btn {
+    outline: none !important;
   }
-
-
-  .onclic:after {
-    outline: none;
-  }
-
-  
 }
 /*# sourceMappingURL=style.css.map */
