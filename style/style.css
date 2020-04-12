@@ -268,8 +268,11 @@ button:after {
     outline: none;
   }
 
-  .onclic {
+
+  .onclic:after {
     outline: none;
   }
+
+  
 }
 /*# sourceMappingURL=style.css.map */
