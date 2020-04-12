@@ -263,5 +263,13 @@ button:after {
   .s-m {
     display: none;
   }
+
+  button{
+    outline: none;
+  }
+
+  .onclic {
+    outline: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
